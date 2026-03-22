@@ -1,0 +1,11 @@
+import threading
+import time
+ 
+def monitor_tea_temp():
+    while True:
+        print(f"🤖 monitoring tea temperature...")
+        time.sleep(3)
+
+threading.Thread(target=monitor_tea_temp).start()
+
+print("🎁  main program done")
